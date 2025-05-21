@@ -1,0 +1,33 @@
+.widget_card {
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+  gap: 2px;
+}
+
+.widget_card_item {
+  width: 40px;
+  height: 25px;
+  list-style-type: none;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.cards {
+  display: none;
+}
+
+.form_group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form_button {
+  width: 150px;
+  height: 30px;
+  color: white;
+  background-color: rgb(96, 188, 96);
+  border: none;
+  border-radius: 3px;
+}
