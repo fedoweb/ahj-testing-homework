@@ -38,10 +38,10 @@ export default class Form {
   createMessage(container, valid) {
     const message = document.createElement('div');
     if(valid) {
-      message.textContent = 'Номер карты введен верно!';
+      message.textContent = 'Card number is valid';
       message.style.color = 'rgb(96, 188, 96)';
     } else {
-      message.textContent = 'Не корректный номер карты!';
+      message.textContent = 'Invalid card number';
       message.style.color = 'red';
     }
     
