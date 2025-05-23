@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "node": "current" // Поддержка текущей версии Node.js
+      }
+    }]
+  ]
+}
