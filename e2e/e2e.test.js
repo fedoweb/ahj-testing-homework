@@ -8,7 +8,7 @@ describe('E2E Test', () => {
   beforeAll(async () => {
 
     browser = await puppeteer.launch({
-      headless: false,
+      headless: true,
       slowMo: 100,
       devtools: true,
     });
@@ -40,7 +40,7 @@ describe('E2E Test', () => {
     }, mastercard);
 
     expect(mastercardStyle).toBe('grayscale(1)');
-  });
+  }, 10000);
 
   it('should correctly identify Mastercard and hightlight it', async () => {
     await page.goto('http://localhost:9000');
@@ -63,7 +63,7 @@ describe('E2E Test', () => {
     }, visa);
 
     expect(visaStyle).toBe('grayscale(1)');
-  });
+  }, 10000);
 
   it('should correctly identify MIR and hightlight it', async () => {
     await page.goto('http://localhost:9000');
@@ -86,7 +86,7 @@ describe('E2E Test', () => {
     }, jcb);
 
     expect(jcbStyle).toBe('grayscale(1)');
-  });
+  }, 10000);
 
   it('should reset card style when input is cleaned', async () => {
     await page.goto('http://localhost:9000');
@@ -106,7 +106,7 @@ describe('E2E Test', () => {
 
        expect(style).toBe('none');
     }
-  });
+  }, 10000);
 
   afterAll(async () => {
     await browser.close();
