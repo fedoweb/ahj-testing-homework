@@ -21,7 +21,7 @@ export default class CardList{
       {type: "mastercard", title: 'Mastercard'},
       {type: "americanExpress", title: 'American Express'},
       {type: "discover", title: 'Discover'},
-      {type: "jsb", title: 'JSB'},
+      {type: "jcb", title: 'JCB'},
       {type: "diners", title: 'Diners Club'},
     ]
   }
@@ -36,7 +36,7 @@ export default class CardList{
   resetCardStyle() {
     const cards = document.querySelectorAll('.widget_card_item');
     cards.forEach(card => {
-      card.style.filter = '';
+      card.style.filter = 'none';
     });
   }
 }
